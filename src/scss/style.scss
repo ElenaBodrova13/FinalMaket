@@ -1,17 +1,56 @@
+@import "font.scss";
+@import "header.scss";
+@import "box-size.scss";
+@import "submenu.scss";
+@import "content.scss";
+@import "side-menu.scss";
+@import "slider.scss";
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "../../node_modules/swiper/modules/pagination.css";
+
+
+
 $bgColor: #24292e;
 $text: #fff;
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
 
 body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  
+  font-family: "TTLakes", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin:0;
+}
+
+
+.conteiner{
+  @media (min-width: 768px) {
+      width:768px;
+    }
+    @media (min-width: 1120px) {
+      width:1120px;
+      background-color: #F8F8F8;
+      position: absolute;
+      left:320px;
+    }
+ 
+
+
+  width:320px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.hidden{
+  display: none;
+ 
+}
+.unhidden{
+  display:block;
+}
+.fog{
+opacity:8%;
 }

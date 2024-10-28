@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family: "TTLakes";
+    font-style: medium;
+    font-weight: 500;
+     
+    src: local("TTLakes"),
+          
+         url("../fonts/TTLakes/TTLakes-Medium.woff") format("woff"), 
+         url("../fonts/TTLakes/TTLakes-Medium.ttf") format("ttf"),
+         url("../fonts/TTLakes/TTLakes-Medium.eot") format("eot");
+
+  }
+  
+@font-face {
+    font-family: "TTLakes";
+    font-style: normal;
+    font-weight: 400;
+     
+    src: local("TTLakes"),
+          
+         url("../fonts/TTLakes/TTLakes-Regular.woff") format("woff"),
+         url("../fonts/TTLakes/TTLakes-Regular.ttf") format("ttf"),
+         url("../fonts/TTLakes/TTLakes-Regular.eot") format("eot");
+
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-style: bold;
+    font-weight: 700;
+     
+    src: local("TTLakes"),
+          
+         url("../fonts/TTLakes/TTLakes-Bold.woff") format("woff"),
+         url("../fonts/TTLakes/TTLakes-Bold.ttf") format("ttf"),
+         url("../fonts/TTLakes/TTLakes-Bold.eot") format("eot");
+
+  }

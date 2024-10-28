@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -7,10 +7,145 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>final progect</title>
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+   
+    <div class="conteiner "> 
+      <header class="conteiner__header "> 
+           <nav class="conteiner__menu menu">
+              <button type="button" class=" menu__burger"> <img alt=""> </button>
+              <div  class="menu__logo"> </div>
+              <div  class="menu__line"></div>
+              <button type="button" class="menu__tell">   <img alt=""></button>
+              <button type="button" class="menu__mesage"> <img alt=""></button>
+              <button type="button" class="menu__profil"> <img alt=""></button>
+              <button type="button" class="menu__tools">  <img alt=""></button>
+              <button type="button" class="menu__seach">  <img alt=""></button>
+          </nav>
+      </header>
+      
+      <main class="conteiner__main main "> 
+         
+          <h1 class="main__title">Услуги и сервисы</h1>
+          <div class="main__forscroll">
+          <ul class="main__submenu submenu">
+                  <li class="submenu__link"> Ремонтируемые бренды  </li>
+                  <li class="submenu__link"> Ремонтируемые устройства  </li>
+                  <li class="submenu__link"> Дополнительные услуги </li>
+                  <li class="submenu__link"> Цены на услуги </li>
+                  <li class="submenu__link"> Адреса сервисных центров </li>
+                  <li class="submenu__link"> Специальные цены </li>
+                  <li class="submenu__link"> Отзывы </li>
+          </ul>
+          </div>  
+          
+          <article class="main__discrib discrib">
+              <div class="discrib__sector1 sector1">
+                  <p class="discrib__first">Мы являемся авторизованным сервисным
+                  центром по ремонту техники Dell. 
+                  Только у нас вы можете отремонтировать
+                  свой ноутбук Dell с официальной гарантией производителя.
+                      </p>
+                  <p class="discrib__second">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+                      что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по 
+                      рекомендациям и, в свою очередь, советуют нас родным и близким.
+                  </p>
+                  <div class="discrib__link-readmore link-readmore">
+                      <div class="link-readmore__icon"> </div>
+                      <a class="link-readmore__text">Читать далее</a>  
+                  </div>
+                             
+              </div>
+              <div class="discrib__sector2 sector2"> 
+                  <div class="sector2__img"> </div> 
+              </div>
+          </article>
+          
+           
+      </main>
+  
+  </div>
+  <div class = "side-menu hidden">
+        
+    <nav class="side-menu__nav nav">
+        <button type="button" class=" nav__burger"> </button>
+        <div  class="nav__logo"> </div>
+        <button type="button" class="nav__seach"> </button>
+    </nav>
+
+    <main class="side-menu__main">
+        <ul class="main__servises servises">
+            <li class="servises__link"> <button class="servises__button servises__button-activ ">Ремонт техники </button> </li>
+            <li class="servises__link"> <button class="servises__button second">Услуги и сервис</button> </li>
+            <li class="servises__link"> <button class="servises__button ">Корпоративным клиентам</button> </li>
+            <li class="servises__link"> <button class="servises__button ">Продавцам техники</button> </li>
+            <li class="servises__link"> <button class="servises__button ">Партнерам </button></li>
+            <li class="servises__link"> <button class="servises__button ">Производителям </button></li>
+            <li class="servises__link"> <button class="servises__button ">Наши сервисные центры </button></li>
+            <li class="servises__link"> <button class="servises__button ">Контакты </button></li>
+        </ul>
+    </main>
+    <footer class="side-menu__footer footer">
+        <nav class="footer__servises servises-foot">
+            <button type="button" class=" servises-foot__tell">  </button>
+            <button type="button" class=" servises-foot__message">  </button>
+            <button type="button" class="servises-foot__contact"> </button>
+        </nav>
+        <div class="footer__mail">mail@cps.com</div>
+        <div class="footer__phon">8 800 890 8900</div>
+        <div class="footer__lengv lengv">
+            <button type="button" class=" lengv__ru"> ru </button>
+            <button type="button" class=" lengv__en">en  </button>
+            <button type="button" class=" lengv__ch"> ch</button>
+        </div>
+    </footer>
+</div> 
+<div class="conteiner conteiner-hidden">
+  <h1 class="conteiner__title">ремонт техники различных брендов</h1>
+          <!-- Slider main container -->
+          <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+              <!-- Slides -->
+             
+               <div class="swiper-slide list"> <div class="item"> <img class="item__logo" src="./img/lenova.png">  </img> <div class="item__circle"></div>  </div> </div>
+               <div class="swiper-slide list">  <div class="item"> <img class="item__logo" src="./img/samsung.png">  </img > <div class="item__circle"></div>   </div> </div>
+               <div class="swiper-slide list">   <div class="item"> <img class="item__logo " src="./img/apple.png">  </img > <div class="item__circle"></div>  </div> </div>
+               <div class="swiper-slide list"> <div class="item"> <img class="item__logo" src="./img/bosh.png">  </img> <div class="item__circle"></div>  </div> </div>
+               <div class="swiper-slide list">  <div class="item"> <img class="item__logo" src="./img/sonic.png">  </img > <div class="item__circle"></div>   </div> </div>
+               <div class="swiper-slide list">   <div class="item"> <img class="item__logo" src="./img/hp.png">  </img > <div class="item__circle"></div>  </div> </div>
+               <div class="swiper-slide list"> <div class="item"> <img class="item__logo" src="./img/bosh.png">  </img> <div class="item__circle"></div>  </div> </div>
+               <div class="swiper-slide list">  <div class="item"> <img class="item__logo" src="./img/sonic.png">  </img > <div class="item__circle"></div>   </div> </div>
+               <div class="swiper-slide list">   <div class="item"> <img class="item__logo" src="./img/hp.png">  </img > <div class="item__circle"></div>  </div> </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+          
+          </div>
+  
+          <div class="conteiner__collection collection">
+              <!-- Slides -->
+              <div class="collection__menu menu">
+                  <div class="menu__lable list"> <div class="item"> <img class="item__logo" src="./img/lenova.png">  </img> <div class="item__circle"></div>  </div> </div>
+                  <div class="menu__lable list">  <div class="item"> <img class="item__logo" src="./img/samsung.png">  </img > <div class="item__circle"></div>   </div> </div>
+                  <div class="menu__lable list">   <div class="item"> <img class="item__logo " src="./img/apple.png">  </img > <div class="item__circle"></div>  </div> </div>
+                  <div class="menu__lable list"> <div class="item"> <img class="item__logo" src="./img/bosh.png">  </img> <div class="item__circle"></div>  </div> </div>
+                  <div class="menu__lable list">  <div class="item"> <img class="item__logo" src="./img/sonic.png">  </img > <div class="item__circle"></div>   </div> </div>
+                  <div class="menu__lable list">   <div class="item"> <img class="item__logo" src="./img/hp.png">  </img > <div class="item__circle"></div>  </div> </div>
+                  <div class="menu__lable list">   <div class="item"> <img class="item__logo " src="./img/apple.png">  </img > <div class="item__circle"></div>  </div> </div>
+                  <div class="menu__lable list"> <div class="item"> <img class="item__logo" src="./img/bosh.png">  </img> <div class="item__circle"></div>  </div> </div>
+              </div>
+             
+              <div class="collection__submenu-hidden submenu ">
+                  <div class="submenu__lable-hidden  list"> <div class="item"> <img class="item__logo" src="./img/sonic.png">  </img > <div class="item__circle"></div>   </div> </div>
+                  <div class="submenu__lable-hidden  list">  <div class="item"> <img class="item__logo" src="./img/hp.png">  </img > <div class="item__circle"></div>  </div> </div>
+                  <div class="submenu__lable-hidden  list"> <div class="item"> <img class="item__logo" src="./img/bosh.png">  </img> <div class="item__circle"></div>  </div> </div>
+                  
+              </div>
+             
+               <button class="collection__else">  <div class="collection__rows rowsdown" ></div> Показать все</button>
+          </div>
+      </div>    
   </body>
 </html>
