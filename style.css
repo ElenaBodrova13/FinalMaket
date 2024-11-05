@@ -861,7 +861,8 @@ html {
       position: relative;
       left: 1000px;
       width: 440px;
-      height: 940px; } }
+      height: 940px;
+      top: -1768px; } }
   .form__burger {
     background-image: url(img/img/burgeropen.png);
     width: 40px;
@@ -970,7 +971,8 @@ html {
       position: relative;
       left: 1000px;
       width: 440px;
-      height: 940px; } }
+      height: 940px;
+      top: -1768px; } }
   .call__burger {
     background-image: url(img/img/burgeropen.png);
     width: 40px;
