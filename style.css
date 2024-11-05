@@ -956,7 +956,8 @@ html {
     color: #FFFFFF;
     border: none;
     margin-left: 152px;
-    margin-top: 19px; }
+    margin-top: 19px;
+    background-color: #FFFFFF; }
 
 .call {
   width: 320px;
@@ -1057,7 +1058,8 @@ html {
     color: #FFFFFF;
     border: none;
     margin-left: 152px;
-    margin-top: 19px; }
+    margin-top: 19px;
+    background-color: #FFFFFF; }
 
 .swiper.equipment {
   width: 320px;
