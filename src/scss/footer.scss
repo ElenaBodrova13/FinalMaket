@@ -1,0 +1,63 @@
+.conteiner__footer{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 320px;
+    padding: 4px;
+    text-align: center;
+    background-color: $fon;
+    padding-top:40px;
+    color:$fontcolor;
+    @media (min-width: 768px) {
+       flex-direction: row;
+       width: 768px;
+       padding-left: 24px;
+       padding-right: 24px;
+       text-align: left;
+       align-items:flex-start;
+
+    }
+    @media (min-width: 1120px) {
+       top: 1725px;
+       position: relative;
+       left: 320px;
+       padding-top: 110px;
+       width: 1120px;
+       justify-content: space-between;
+    
+   }
+    
+    span{
+        margin-bottom: 16px;
+        &:first-child {
+        @media (min-width: 768px) {
+          text-align: left;
+          flex-basis: 37.33%;
+        }
+        @media (min-width: 1120px) {
+            text-align: left;
+            flex-basis: auto;
+          }
+    }
+        &:nth-child(2) {
+            @media (min-width: 768px) {
+              text-align: center;
+              white-space: nowrap;
+              
+            }
+    }
+    &:nth-child(3) {
+        @media (min-width: 768px) {
+          text-align: right;
+         
+        }
+        @media (min-width: 1120px) {
+        flex-basis: 35.33%;
+            
+        }
+        }
+}
+}

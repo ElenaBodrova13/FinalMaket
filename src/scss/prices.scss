@@ -1,0 +1,209 @@
+.prises__wraper {
+    height: 250px;
+    margin-top: 16px;
+    @media (min-width: 768px) {
+        height: 384px;
+        margin-top:0;
+       
+       
+    }
+    .prises__slide{
+        height: 240px;
+        @media (min-width: 768px) {
+           height: 64px;
+           background-color: $fon;
+           
+        }
+    }
+     .first-row{
+        @media (min-width: 768px) {}
+        height: 128px;
+    }
+     
+    .prises-list__row {
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 260px;
+    height: 200px;
+    font-size: 14px;
+    color:$textbold;
+    margin-left: 24px;
+    list-style: none;
+    @media (min-width: 768px) {
+    width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: auto;
+        border: none;
+        margin-right: 24px;
+        align-content: flex-start;
+        height: 128px;
+        margin-top: 0;
+        padding: 0;
+        border-radius: 0;
+        background-color: $fon;
+        
+    }
+
+   
+        .prises-list__servis {
+            @media (min-width: 768px) {
+           
+           @include getWith(388);
+            order: 4;
+            }
+        }
+
+        .prises-list__servis_head {
+        
+        
+            @media (min-width: 768px) {
+                @include getWith(388);
+                background-color:$fon;
+                order: 0;
+           
+            }
+            }
+        
+
+        .prises-list__price{
+            @media (min-width: 768px) {
+                
+                order: 5;
+                @include getWith(85);
+            }
+        }
+        .prises-list__price_head {
+        
+            @media (min-width: 768px) {
+                background-color:$fon;
+                order: 1;
+                @include getWith(85);
+           
+                
+            }
+        }
+
+        .prises-list__term {
+            @media (min-width: 768px) {
+                order: 6;
+                @include getWith(102);
+            }
+        }
+        .prises-list__term_head {
+        
+            
+            @media (min-width: 768px) {
+                order: 2;
+                @include getWith(102);
+                background-color:$fon;
+            
+            }
+        }
+
+        
+        
+        .prises-list__order {
+            background-image: url("../img/Group\ 10.png");
+            height: 32px;
+            width: 119px;
+            border:none;
+            align-self: self-end;    
+            margin-top: -33px;
+            padding-top: 31px;
+            @media (min-width: 768px) {
+                order: 7;
+                height: 64px;
+                border-radius:0 10px 0 0;
+                background-repeat:no-repeat;
+                background-color: $white-back;
+                @include getWith(145);
+                background-position: center;
+            
+      
+            
+            
+            }
+        } 
+        .prises-list__order_head {
+        @media (min-width: 768px) {
+            @include getWith(145);
+            background-color:$fon;
+            order: 3;
+            height: 64px;
+        
+
+        }
+        }
+       
+            
+            .prises-head{
+                @media (min-width: 768px) {
+                display: none;
+                }  
+            }
+            li {
+                @media (min-width: 768px) {
+                height: 64px;
+                padding-top: 23px;
+                padding-left: 10px;
+                background-color: $white-back;
+            }
+        }
+    
+}
+}
+
+.prises-list__row::after:not(.first-row) {
+    @media (min-width: 768px) {
+    background-image: url(../img/Rectangle.png);
+    content: "";
+    width: 688px;
+    height: 1px;
+    }
+}
+.prises__wraper{
+ul>li:nth-child(1),
+ul>li:nth-child(3),
+ul>li:nth-child(5) {
+    
+                color:$fontcolor;
+            
+        }
+    }
+            .first-row>ul>li:nth-child(2) {
+                
+                @media (min-width: 768px) {
+                border-radius:10px 0 0 0;
+            }
+                    }
+                    .first-row>ul>li:nth-child(6) {
+                
+                        @media (min-width: 768px) {
+                        border-radius:0 10px 0 0;
+                    }
+                            }
+    .prises__note {
+       padding-left: 16px;
+       @media (min-width: 768px) {
+        width: 500px;
+        padding-left: 24px;
+    }
+    }
+    .prises__offer {
+        padding-left: 16px;
+        padding-right: 112px;
+        font-size: 16px;
+        font-weight: 500;
+        white-space:pre;
+        @media (min-width: 768px) {
+            white-space:nowrap;
+            padding-left: 24px;
+        }
+        img{
+            margin-bottom: -10px;
+        }
+     }

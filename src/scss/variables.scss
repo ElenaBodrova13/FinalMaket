@@ -1,0 +1,14 @@
+$fon:#F8F8F8;
+$border: #B8FFEC;
+$fontcolor:#7E7E82;
+$white-back:#FFFFFF;
+$borderfon: #B5B6BC;
+$textbold:#1B1C21;
+$agreement-red: #FF3E79;
+$borderItem: #EAEAEA;
+%gradient{ background-image: linear-gradient(to right, $fon, $white-back)};
+@mixin getWith($Y){
+    width: $Y/720*100%;
+}
+
+

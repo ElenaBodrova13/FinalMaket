@@ -1,0 +1,51 @@
+
+
+$bgColor: #24292e;
+$text: #fff;
+$fon:#F8F8F8;
+
+
+
+body {
+  
+  font-family: "TTLakes", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin:0;
+  
+  button,
+  a {
+    cursor: pointer;
+  }
+}
+
+
+.conteiner{
+  @media (min-width: 768px) {
+      max-width:768px;
+    }
+  @media (min-width: 1120px) {
+      max-width:1120px;
+      background-color:$fon;
+       position: absolute;
+      left:320px;
+    }
+
+  max-width:320px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hidden{
+  display: none;
+ 
+}
+.unhidden{
+  display:block;
+}
+.fog{
+opacity:8%;
+}

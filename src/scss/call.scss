@@ -1,0 +1,143 @@
+.call{
+    width: 320px;
+    min-height: 675px;
+    position:absolute;
+    top: 0;
+    z-index: 20;
+    background-color: white;
+    
+      
+   @media (min-width: 1120px) {
+    box-shadow: 0 0px 30px 2px grey;
+    
+        position: relative;
+        left: 1000px;
+        width: 440px;
+        height: 940px;
+   }
+
+    &__burger{
+        background-image: url("../img/burgeropen.png");
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        border:none;
+        padding:0;
+        transition-duration: 1s;
+        cursor: pointer;
+        margin-top: 24px;
+        margin-left: 16px;
+        
+        &:hover
+            {
+            transform: scale(1.5) rotate(360deg);
+            box-shadow: 0 0 5px 2px  #0f3046;
+            }
+            @media (min-width: 1120px) {
+            
+                position: absolute;
+                left: -90px;
+            }
+    }
+  &__input {
+    @media (min-width: 1120px) {
+    padding-top: 40px;
+    }
+  }
+    &__line {
+       
+        background-image: url("../img/highlight.png");
+        height:32px;
+        width: 4px;
+        margin-bottom: 24px;
+        margin-top: 40px;
+        @media (min-width: 1120px) {
+            
+           
+                top: 40px;
+                position: relative;
+            
+        }
+        }
+    &__text {
+        display: inline-block;
+        text-wrap: nowrap;
+        height: 32px;
+        color:$textbold;
+        font-weight: 600;    
+        font-size: 24px;
+        line-height: 32px;
+         margin-left:12px;
+        text-align: left;
+        @media (min-width: 1120px) {
+            
+           
+            margin-left:32px;
+    }
+      
+        }
+    &__data {
+       
+        width: 288px;
+        height: 48px;
+        
+        border:solid 1px $borderfon;
+        margin-bottom: 16px;
+   
+    margin-right: 16px;
+    border-radius: 8%;
+    padding-left: 16px;
+    @media (min-width: 1120px) {
+        width: 376px;
+        
+       }
+        
+
+    }
+    label{
+        display: inline-block;
+    width: 288px;
+    height: 48px;
+    
+    margin-bottom: 16px;
+    margin-left:16px;
+    margin-right: 16px;
+    border:none;
+    @media (min-width: 1120px) {
+        margin-left:32px;
+        
+       }
+    
+   
+    }
+  
+    
+    &__agreement{
+        color:$fontcolor;
+        margin: 0;
+        margin-left: 16px;
+    
+         & a{
+            color:$agreement-red;
+            text-decoration: none;
+
+        }
+
+        @media (min-width: 1120px) {
+            
+            margin-right:32px;
+            margin-left:32px;
+    }
+    }
+
+    &__submit{
+        background-image: url("../img/submit.png");
+        height: 32px;
+        width: 136px;
+        color:$white-back;
+        border:none;
+        margin-left:152px;
+        margin-top:19px;
+    }
+    
+}
