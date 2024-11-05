@@ -28,7 +28,7 @@
     box-sizing: border-box;
     padding: 16px;
     margin-left: 16px;
-    border:1px solid  #EAEAEA;
+    border:1px solid $borderItem;
     background-color:$white-back;
         @media (min-width: 1120px) {
             width:240px;

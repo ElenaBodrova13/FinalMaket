@@ -135,7 +135,7 @@ position: relative;
         
         margin: 0;
         padding: 0;
-        margin-top: 16px;
+        
 
                 
 
@@ -144,50 +144,63 @@ position: relative;
                 display: flex;
                 margin:0;
             height:56px;
+            
+                ::before{
+                    content:"";
+                    display:inline-block;
+                    background-image: url("../img/highlight.png");
+                    height:32px;
+                    width: 4px;
+                    position: relative;
+                    left:-24px;
+                    top:8px;
+                    
+                    opacity: 0%;
+                  }
             &:hover {
-                text-decoration: underline;
-                text-transform: uppercase;
-                color:#0a96f4;
+               
+             
                 
+               ::before{
+                   content:"";
+                    background-image: url("../img/highlight.png");
+                    height:32px;
+                    width: 4px;
+                    position: relative;
+                    left:-24px;
+                    top:8px;
+                    opacity: 100%;
+                
+                 }
                 }
             }
-
-
             &__button{
                 border: none;
                 font-size: 16px;
                 font-weight: 500;
                 padding:0;
                 padding-left:24px;
-                height:24px;
+                
                 background-color: white;
                 transition-duration: 0.5s;
-            cursor: pointer;
-            }
-
-            &__button-activ{
-                color: #7e7e82;
+                cursor: pointer;
                 
             }
-            & li:nth-child(2) button{
-                
 
-                margin-top: 8px;
-}
-            &__button-activ::before {
-                content:"";
-                display:inline-block;
-                background-image: url("../img/highlight.png");
-                height:32px;
-                width: 4px;
-                position: relative;
-                left:-24px;
-                top:8px;
-            }
-        }
+            
+          
+    }
+.side-servises__link{
+    :hover{
+color: $fontcolor;
+    }
+    }
+
+
 /*Футтер*/
 .buttons-contacts{
     margin-left:24px;
+    margin-top: 32px;
 &__tell {
 background-image: url("../img/call.png");
 }  

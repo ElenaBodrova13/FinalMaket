@@ -54,7 +54,7 @@ let rowEqup = document.querySelector(".equipment__rows");
 buttonElseEqup.addEventListener("click", function(){
   equpExtra.classList.toggle("hidden");
       
-      if (buttonElseEqup.classList.contains("hidden")) {
+      if (equpExtra.classList.contains("hidden")) {
           buttonElseEqup.textContent="Показать все";
           rowEqup.classList.remove("rowsupp");
           rowEqup.classList.add("rowsdown");
