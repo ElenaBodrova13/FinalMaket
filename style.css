@@ -913,7 +913,7 @@ html {
     border: solid 1px #B5B6BC;
     margin-bottom: 16px;
     margin-right: 16px;
-    border-radius: 8%;
+    border-radius: 8px;
     padding-left: 16px; }
     @media (min-width: 1120px) {
       .form__data {
@@ -931,7 +931,7 @@ html {
         margin-left: 32px; } }
   .form textarea {
     margin-left: 16px;
-    border-radius: 8% 1px solid;
+    border-radius: 8px 1px solid;
     height: 118px;
     padding-top: 12px;
     padding-left: 16px; }
@@ -1024,7 +1024,7 @@ html {
     border: solid 1px #B5B6BC;
     margin-bottom: 16px;
     margin-right: 16px;
-    border-radius: 8%;
+    border-radius: 8px;
     padding-left: 16px; }
     @media (min-width: 1120px) {
       .call__data {
