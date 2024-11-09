@@ -24,7 +24,7 @@ let mobilEqup=function() {
       },
       slidesPerView: 1.2,
     });
-    newEquipment.dataset.mobile == 'true'
+    newEquipment.dataset.mobile = 'true'
   }
     
   if (window.innerWidth > 768 ){

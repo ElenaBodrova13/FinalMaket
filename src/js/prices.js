@@ -7,9 +7,17 @@ import { Pagination } from 'swiper/modules';
 let pricesSwiper = document.querySelector(".prises");
 export let swiperPrices;
 
-let mobilSwiperPrises=function() {
+window.addEventListener('resize', function(){ 
+  mobilSwiperPrises();
+});
 
-  if (window.innerWidth <= 768 && pricesSwiper.dataset.mobile == 'false') {
+if (window.innerWidth <= 513) {
+  mobilSwiperPrises();
+};
+
+function mobilSwiperPrises() {
+
+  if (window.innerWidth <= 513 && pricesSwiper.dataset.mobile == 'false') {
     swiperPrices = new Swiper(pricesSwiper, {
     modules:[ Pagination ],
       // Optional parameters
@@ -23,11 +31,11 @@ let mobilSwiperPrises=function() {
       },
       slidesPerView: 1.2,
     });
-    pricesSwiper.dataset.mobile == 'true'
+    pricesSwiper.dataset.mobile = 'true'
 
-  }
+  };
     
-  if (window.innerWidth > 768 ){
+  if (window.innerWidth > 513 && swiperPrices !== undefined ){
        
     pricesSwiper.dataset.mobile = 'false';
     
@@ -37,12 +45,6 @@ let mobilSwiperPrises=function() {
 };
 
 
-window.addEventListener('resize', function(){ 
-    mobilSwiperPrises();
-});
 
-if (window.innerWidth <= 768) {
-    mobilSwiperPrises();
-};
 
  
