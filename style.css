@@ -551,7 +551,7 @@ html {
 
 .swiper.new-slider {
   width: 320px;
-  height: 154px;
+  height: 164px;
   background-color: #F8F8F8;
   padding-top: 24px;
   padding-left: 16px; }
@@ -607,7 +607,8 @@ html {
   background-color: #FFFFFF; }
   @media (min-width: 768px) {
     .item {
-      margin-left: 24px; } }
+      margin-left: 24px;
+      margin-top: 20px; } }
   @media (min-width: 1120px) {
     .item {
       margin-left: 32px;
@@ -625,16 +626,21 @@ html {
     display: flex;
     vertical-align: middle;
     align-items: center;
-    width: auto;
-    height: auto; } }
+    width: 240px;
+    height: 72px; } }
 
 @media (min-width: 768px) {
-  .collection > .swiper-slide.list:nth-child(2), .collection > .swiper-slide.list:first-child {
+  .collection > .swiper-slide.list:nth-child(2), .collection > .swiper-slide.list:first-child, .collection > .swiper-slide.list:last-child {
     display: none; } }
 
 @media (min-width: 1120px) {
-  .collection > .swiper-slide.list:nth-child(2), .collection > .swiper-slide.list:first-child {
-    display: block; } }
+  .collection > .swiper-slide.list:nth-child(2), .collection > .swiper-slide.list:first-child, .collection > .swiper-slide.list:last-child {
+    display: inline-block;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    width: 240px;
+    height: 72px; } }
 
 @media (min-width: 768px) {
   .wrapper {
@@ -644,6 +650,10 @@ html {
 
 .swiper-pagination-bullet {
   background: #B5B6BC !important; }
+  @media (min-width: 768px) {
+    .swiper-pagination-bullet {
+      position: absolute;
+      visibility: hidden; } }
 
 @media (min-width: 768px) {
   .collection__extra {
@@ -656,7 +666,8 @@ html {
     border: none;
     background-color: #F8F8F8;
     color: #1B1C21;
-    justify-content: left; } }
+    justify-content: left;
+    flex-wrap: wrap; } }
 
 .button-else {
   display: none; }
@@ -668,8 +679,8 @@ html {
       font-weight: 500;
       font-size: 16px;
       border: none;
-      margin-top: 8px;
-      margin-bottom: 32px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       background-color: #F8F8F8;
       color: #1B1C21;
       width: 110px; } }
@@ -1113,11 +1124,13 @@ html {
     height: auto; } }
 
 @media (min-width: 768px) {
-  .equipment__list:first-child {
+  .equipment__list:first-child,
+  .equipment__list:last-child {
     display: none; } }
 
 @media (min-width: 1120px) {
-  .equipment__list:first-child {
+  .equipment__list:first-child,
+  .equipment__list:last-child {
     display: block; } }
 
 @media (min-width: 768px) {
@@ -1153,7 +1166,8 @@ body {
     .conteiner {
       max-width: 1120px;
       background-color: #F8F8F8;
-      margin-left: 320px; } }
+      margin-left: auto;
+      margin-right: auto; } }
 
 .hidden {
   display: none; }
@@ -1164,22 +1178,22 @@ body {
 .fog {
   opacity: 8%; }
 
-.prises__wraper {
-  height: 250px;
+.swiper-wrapper.wrapper.prises__wraper {
+  height: 260px;
   margin-top: 16px; }
   @media (min-width: 768px) {
-    .prises__wraper {
+    .swiper-wrapper.wrapper.prises__wraper {
       height: 384px;
       margin-top: 0; } }
-  .prises__wraper .prises__slide {
+  .swiper-wrapper.wrapper.prises__wraper .prises__slide {
     height: 240px; }
     @media (min-width: 768px) {
-      .prises__wraper .prises__slide {
+      .swiper-wrapper.wrapper.prises__wraper .prises__slide {
         height: 64px;
         background-color: #F8F8F8; } }
-  .prises__wraper .first-row {
+  .swiper-wrapper.wrapper.prises__wraper .first-row {
     height: 128px; }
-  .prises__wraper .prises-list__row {
+  .swiper-wrapper.wrapper.prises__wraper .prises-list__row {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -1190,7 +1204,7 @@ body {
     margin-left: 24px;
     list-style: none; }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row {
         width: auto;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1205,33 +1219,33 @@ body {
         border-radius: 0;
         background-color: #F8F8F8; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row .prises-list__servis {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__servis {
         width: 53.88889%;
         order: 4; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row .prises-list__servis_head {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__servis_head {
         width: 53.88889%;
         background-color: #F8F8F8;
         order: 0; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row .prises-list__price {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__price {
         order: 5;
         width: 11.80556%; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row .prises-list__price_head {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__price_head {
         background-color: #F8F8F8;
         order: 1;
         width: 11.80556%; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row .prises-list__term {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__term {
         order: 6;
         width: 14.16667%; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row .prises-list__term_head {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__term_head {
         order: 2;
         width: 14.16667%;
         background-color: #F8F8F8; } }
-    .prises__wraper .prises-list__row .prises-list__order {
+    .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__order {
       background-image: url("img/img/Group 10.png");
       height: 32px;
       width: 119px;
@@ -1240,7 +1254,7 @@ body {
       margin-top: -33px;
       padding-top: 31px; }
       @media (min-width: 768px) {
-        .prises__wraper .prises-list__row .prises-list__order {
+        .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__order {
           order: 7;
           height: 64px;
           border-radius: 0 10px 0 0;
@@ -1249,16 +1263,16 @@ body {
           width: 20.13889%;
           background-position: center; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row .prises-list__order_head {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-list__order_head {
         width: 20.13889%;
         background-color: #F8F8F8;
         order: 3;
         height: 64px; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row .prises-head {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row .prises-head {
         display: none; } }
     @media (min-width: 768px) {
-      .prises__wraper .prises-list__row li {
+      .swiper-wrapper.wrapper.prises__wraper .prises-list__row li {
         height: 64px;
         padding-top: 23px;
         padding-left: 10px;
@@ -1326,7 +1340,8 @@ body {
       align-items: flex-start; } }
   @media (min-width: 1120px) {
     .conteiner__footer {
-      margin-left: 320px;
+      margin-left: auto;
+      margin-right: auto;
       padding-top: 110px;
       width: 1120px;
       justify-content: space-between; } }
