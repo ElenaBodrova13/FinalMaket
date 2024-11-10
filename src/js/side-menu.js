@@ -11,7 +11,7 @@ const mainDocWhidht=mainDoc.clientWidth;
 
 
 
-if  (window.innerWidth > 1120) {
+if  (window.innerWidth > 1440) {
     sideMenu.classList.toggle("hidden");
 }
   
@@ -33,12 +33,12 @@ navBurger.addEventListener("click", function(){
 
 
 window.addEventListener('resize', () => {
-    if ( window.innerWidth > 1120 && sideMenu.classList.contains("hidden")) {
+    if ( window.innerWidth > 1440 && sideMenu.classList.contains("hidden")) {
        
               sideMenu.classList.remove("hidden");
       
     }  
-        if ( window.innerWidth < 1120 && !sideMenu.classList.contains("hidden")) {
+        if ( window.innerWidth < 1440 && !sideMenu.classList.contains("hidden")) {
         
             sideMenu.classList.add("hidden");
         }
