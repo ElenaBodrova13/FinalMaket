@@ -1162,12 +1162,11 @@ body {
   @media (min-width: 768px) {
     .conteiner {
       max-width: 768px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1120px) {
     .conteiner {
       max-width: 1120px;
       background-color: #F8F8F8;
-      margin-left: auto;
-      margin-right: auto; } }
+      margin-left: auto; } }
 
 .hidden {
   display: none; }
