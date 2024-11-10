@@ -27,7 +27,7 @@ let mobilEqup=function() {
     newEquipment.dataset.mobile = 'true'
   }
     
-  if (window.innerWidth > 768 ){
+  if (window.innerWidth > 768 && Equpswiper !== undefined){
        
     newEquipment.dataset.mobile = 'false';
     Equpswiper.destroy();

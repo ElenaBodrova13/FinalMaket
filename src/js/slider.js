@@ -12,14 +12,14 @@ window.addEventListener('resize', function(){
   mobilSwiper();
 });
 
-if (window.innerWidth <= 513) {
+if (window.innerWidth <= 768) {
   mobilSwiper();
 };
 
 
 function mobilSwiper () {
 
-    if (window.innerWidth <= 513 && newSwiper.dataset.mobile == 'false') {
+    if (window.innerWidth <= 768 && newSwiper.dataset.mobile == 'false') {
       swiper = new Swiper (newSwiper, {
       modules:[ Pagination ],
         // Optional parameters
@@ -39,7 +39,7 @@ function mobilSwiper () {
     };
 
     
-      if (window.innerWidth > 513 && swiper !== undefined ) {
+      if (window.innerWidth > 768 && swiper !== undefined ) {
           
         newSwiper.dataset.mobile = 'false';
 
